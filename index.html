@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Najif Bin Jaman — Web Developer, Social Media Strategist & RDP Admin</title>
-    <meta name="description" content="Official portfolio of Najif Bin Jaman — Web Developer, Social Media Strategist, Cloud & RDP Server Administrator, and Digital Entrepreneur.">
+    <title>Najif Bin Jaman — Cyber Security Specialist & Social Media Expert</title>
+    <meta name="description" content="Official portfolio of Najif Bin Jaman — Cyber Security Specialist, Social Media Account Recovery, Content Takedown & Page Management Expert from Rajshahi, Bangladesh.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,11 +19,11 @@
             --bg-main: #060913;
             --bg-secondary: #0b1022;
             --bg-elevated: #111833;
-            --surface-glass: rgba(15, 22, 46, 0.72);
-            --surface-glass-strong: rgba(12, 18, 38, 0.92);
-            --surface-card: rgba(19, 28, 56, 0.65);
-            --border-subtle: rgba(99, 102, 241, 0.22);
-            --border-glow: rgba(34, 211, 238, 0.55);
+            --surface-glass: rgba(15, 22, 46, 0.74);
+            --surface-glass-strong: rgba(12, 18, 38, 0.94);
+            --surface-card: rgba(19, 28, 56, 0.68);
+            --border-subtle: rgba(99, 102, 241, 0.24);
+            --border-glow: rgba(34, 211, 238, 0.6);
             --text-primary: #f8fafc;
             --text-secondary: #94a3b8;
             --text-muted: #64748b;
@@ -32,10 +32,11 @@
             --accent-cyan: #06b6d4;
             --accent-emerald: #10b981;
             --accent-amber: #f59e0b;
+            --accent-rose: #f43f5e;
             --gradient-brand: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #06b6d4 100%);
             --gradient-text: linear-gradient(90deg, #818cf8 0%, #c084fc 48%, #22d3ee 100%);
-            --shadow-glass: 0 20px 50px -15px rgba(0, 0, 0, 0.65);
-            --shadow-glow: 0 12px 32px -8px rgba(99, 102, 241, 0.45);
+            --shadow-glass: 0 20px 50px -15px rgba(0, 0, 0, 0.68);
+            --shadow-glow: 0 12px 32px -8px rgba(99, 102, 241, 0.48);
             --radius-sm: 10px;
             --radius-md: 16px;
             --radius-lg: 24px;
@@ -48,10 +49,10 @@
             --bg-main: #f4f7fb;
             --bg-secondary: #e9eff8;
             --bg-elevated: #ffffff;
-            --surface-glass: rgba(255, 255, 255, 0.85);
-            --surface-glass-strong: rgba(255, 255, 255, 0.96);
-            --surface-card: rgba(255, 255, 255, 0.88);
-            --border-subtle: rgba(99, 102, 241, 0.2);
+            --surface-glass: rgba(255, 255, 255, 0.88);
+            --surface-glass-strong: rgba(255, 255, 255, 0.97);
+            --surface-card: rgba(255, 255, 255, 0.92);
+            --border-subtle: rgba(99, 102, 241, 0.22);
             --border-glow: rgba(99, 102, 241, 0.55);
             --text-primary: #0f172a;
             --text-secondary: #475569;
@@ -83,7 +84,6 @@
             transition: background-color 0.35s ease, color 0.35s ease;
         }
 
-        /* Explicit SVG & Media Size Constraints so graphics NEVER blow up */
         svg, img {
             max-width: 100%;
             height: auto;
@@ -147,7 +147,7 @@
             inset: 0;
             background: radial-gradient(
                 600px circle at var(--cursor-x) var(--cursor-y),
-                rgba(99, 102, 241, 0.12),
+                rgba(99, 102, 241, 0.13),
                 rgba(6, 182, 212, 0.05) 40%,
                 transparent 80%
             );
@@ -253,7 +253,6 @@
             box-shadow: var(--shadow-glow);
         }
 
-        /* Section Header Styles */
         section {
             padding: 5.5rem 0;
             position: relative;
@@ -262,7 +261,7 @@
 
         .section-header {
             text-align: center;
-            max-width: 680px;
+            max-width: 720px;
             margin: 0 auto 3.5rem auto;
         }
 
@@ -397,8 +396,8 @@
         }
 
         .icon-btn {
-            width: 40px;
-            height: 40px;
+            width: 42px;
+            height: 42px;
             border-radius: 12px;
             display: inline-flex;
             align-items: center;
@@ -412,8 +411,34 @@
 
         .icon-btn:hover {
             border-color: var(--accent-cyan);
-            background: rgba(6, 182, 212, 0.15);
-            transform: translateY(-2px);
+            background: rgba(6, 182, 212, 0.16);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px -4px rgba(6, 182, 212, 0.35);
+        }
+
+        .app-logo-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.55rem;
+            padding: 0.5rem 0.95rem;
+            border-radius: 14px;
+            background: var(--surface-glass);
+            border: 1px solid var(--border-subtle);
+            font-size: 0.84rem;
+            font-weight: 700;
+            transition: all 0.25s ease;
+        }
+
+        .app-logo-pill:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent-cyan);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .app-logo-svg {
+            width: 22px;
+            height: 22px;
+            flex-shrink: 0;
         }
 
         .btn-primary {
@@ -435,6 +460,27 @@
             transform: translateY(-2px);
             filter: brightness(1.08);
             box-shadow: 0 16px 36px -6px rgba(99, 102, 241, 0.65);
+        }
+
+        .btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.55rem;
+            padding: 0.75rem 1.45rem;
+            border-radius: 14px;
+            font-weight: 700;
+            font-size: 0.92rem;
+            color: #ffffff;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            box-shadow: 0 12px 28px -8px rgba(16, 185, 129, 0.5);
+            transition: all 0.28s ease;
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.08);
+            box-shadow: 0 16px 34px -6px rgba(16, 185, 129, 0.68);
         }
 
         .btn-secondary {
@@ -583,23 +629,23 @@
         }
 
         .hero-bio {
-            font-size: 1.06rem;
+            font-size: 1.04rem;
             color: var(--text-secondary);
-            max-width: 590px;
-            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-bottom: 1.85rem;
         }
 
         .hero-cta-group {
             display: flex;
             flex-wrap: wrap;
-            gap: 1rem;
-            margin-bottom: 2.2rem;
+            gap: 0.9rem;
+            margin-bottom: 2rem;
         }
 
         .social-strip {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
+            gap: 0.65rem;
             flex-wrap: wrap;
         }
 
@@ -609,10 +655,9 @@
             text-transform: uppercase;
             letter-spacing: 0.1em;
             color: var(--text-muted);
-            margin-right: 0.25rem;
+            margin-right: 0.2rem;
         }
 
-        /* Hero Right Visual: Developer & Cloud Node Showcase */
         .hero-visual-wrapper {
             position: relative;
             max-width: 440px;
@@ -666,31 +711,38 @@
         }
 
         .avatar-stage {
-            width: 190px;
-            height: 190px;
+            width: 196px;
+            height: 196px;
             margin: 0.5rem auto 1.25rem auto;
-            border-radius: 26px;
+            border-radius: 28px;
             padding: 3px;
             background: var(--gradient-brand);
             position: relative;
-            box-shadow: 0 14px 35px rgba(99, 102, 241, 0.35);
+            box-shadow: 0 14px 35px rgba(99, 102, 241, 0.38);
         }
 
         .avatar-stage-inner {
             width: 100%;
             height: 100%;
-            border-radius: 23px;
+            border-radius: 25px;
             background: #080d1e;
             overflow: hidden;
             display: flex;
-            align-items: flex-end;
+            align-items: center;
             justify-content: center;
             position: relative;
         }
 
+        .profile-photo-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 24px;
+        }
+
         .avatar-svg {
-            width: 175px;
-            height: 175px;
+            width: 180px;
+            height: 180px;
         }
 
         .profile-meta {
@@ -763,12 +815,12 @@
 
         .chip-top-left {
             top: 48px;
-            left: -22px;
+            left: -24px;
         }
 
         .chip-bottom-right {
             bottom: 68px;
-            right: -22px;
+            right: -24px;
             animation-delay: 2.2s;
         }
 
@@ -881,15 +933,22 @@
         }
 
         .tech-item {
-            padding: 0.8rem 1rem;
+            padding: 0.85rem 1rem;
             border-radius: 14px;
             background: rgba(99, 102, 241, 0.07);
             border: 1px solid var(--border-subtle);
             display: flex;
             align-items: center;
-            gap: 0.7rem;
-            font-size: 0.85rem;
-            font-weight: 600;
+            gap: 0.75rem;
+            font-size: 0.86rem;
+            font-weight: 700;
+            transition: all 0.25s ease;
+        }
+
+        .tech-item:hover {
+            border-color: var(--accent-cyan);
+            background: rgba(99, 102, 241, 0.14);
+            transform: translateY(-2px);
         }
 
         .services-grid {
@@ -929,7 +988,7 @@
 
         .service-index {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 0.75rem;
+            font-size: 0.72rem;
             font-weight: 700;
             padding: 0.3rem 0.75rem;
             border-radius: 999px;
@@ -940,15 +999,15 @@
 
         .service-title {
             font-family: 'Space Grotesk', sans-serif;
-            font-size: 1.35rem;
+            font-size: 1.3rem;
             font-weight: 700;
             margin-bottom: 0.75rem;
         }
 
         .service-desc {
             color: var(--text-secondary);
-            font-size: 0.92rem;
-            margin-bottom: 1.4rem;
+            font-size: 0.91rem;
+            margin-bottom: 1.35rem;
         }
 
         .service-list {
@@ -961,7 +1020,7 @@
             display: flex;
             align-items: center;
             gap: 0.6rem;
-            font-size: 0.85rem;
+            font-size: 0.84rem;
             color: var(--text-secondary);
         }
 
@@ -1075,12 +1134,12 @@
             color: #ffffff;
         }
 
-        .banner-grad-1 { background: linear-gradient(135deg, #0284c7 0%, #4f46e5 100%); }
-        .banner-grad-2 { background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%); }
-        .banner-grad-3 { background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%); }
+        .banner-grad-1 { background: linear-gradient(135deg, #1877F2 0%, #4f46e5 100%); }
+        .banner-grad-2 { background: linear-gradient(135deg, #e11d48 0%, #7c3aed 100%); }
+        .banner-grad-3 { background: linear-gradient(135deg, #dc2626 0%, #9333ea 100%); }
         .banner-grad-4 { background: linear-gradient(135deg, #0d9488 0%, #2563eb 100%); }
-        .banner-grad-5 { background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%); }
-        .banner-grad-6 { background: linear-gradient(135deg, #059669 0%, #0891b2 100%); }
+        .banner-grad-5 { background: linear-gradient(135deg, #db2777 0%, #f97316 100%); }
+        .banner-grad-6 { background: linear-gradient(135deg, #059669 0%, #0284c7 100%); }
 
         .project-banner-top {
             display: flex;
@@ -1097,7 +1156,7 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.06em;
-            background: rgba(0, 0, 0, 0.38);
+            background: rgba(0, 0, 0, 0.42);
             backdrop-filter: blur(8px);
         }
 
@@ -1105,7 +1164,7 @@
             width: 36px;
             height: 36px;
             border-radius: 10px;
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.22);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1119,7 +1178,7 @@
             border-radius: 8px;
             font-size: 0.72rem;
             font-weight: 700;
-            background: rgba(0, 0, 0, 0.36);
+            background: rgba(0, 0, 0, 0.4);
             width: fit-content;
         }
 
@@ -1170,41 +1229,47 @@
 
         .contact-grid {
             display: grid;
-            grid-template-columns: 1fr 1.25fr;
-            gap: 3rem;
+            grid-template-columns: 1.05fr 1.2fr;
+            gap: 2.75rem;
             align-items: start;
         }
 
         .contact-cards-list {
             display: grid;
-            gap: 0.9rem;
-            margin: 1.75rem 0;
+            gap: 0.85rem;
+            margin: 1.6rem 0;
         }
 
         .contact-info-card {
-            padding: 1rem 1.15rem;
+            padding: 0.95rem 1.15rem;
             border-radius: 16px;
             background: rgba(99, 102, 241, 0.08);
             border: 1px solid var(--border-subtle);
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 1rem;
+            gap: 0.85rem;
+            transition: all 0.25s ease;
+        }
+
+        .contact-info-card:hover {
+            border-color: var(--accent-cyan);
+            background: rgba(99, 102, 241, 0.13);
         }
 
         .contact-info-left {
             display: flex;
             align-items: center;
-            gap: 0.9rem;
+            gap: 0.85rem;
             min-width: 0;
         }
 
         .contact-info-icon {
-            width: 42px;
-            height: 42px;
+            width: 44px;
+            height: 44px;
             border-radius: 12px;
-            background: rgba(99, 102, 241, 0.18);
-            color: var(--accent-cyan);
+            background: rgba(15, 23, 42, 0.65);
+            border: 1px solid var(--border-subtle);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1212,8 +1277,12 @@
             flex-shrink: 0;
         }
 
+        body.light-mode .contact-info-icon {
+            background: #ffffff;
+        }
+
         .contact-info-label {
-            font-size: 0.7rem;
+            font-size: 0.68rem;
             text-transform: uppercase;
             letter-spacing: 0.08em;
             color: var(--text-muted);
@@ -1221,7 +1290,7 @@
         }
 
         .contact-info-value {
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             font-weight: 700;
             white-space: nowrap;
             overflow: hidden;
@@ -1229,7 +1298,7 @@
         }
 
         .copy-chip {
-            padding: 0.4rem 0.75rem;
+            padding: 0.42rem 0.8rem;
             border-radius: 10px;
             font-size: 0.75rem;
             font-weight: 700;
@@ -1237,6 +1306,9 @@
             color: var(--accent-cyan);
             border: 1px solid rgba(6, 182, 212, 0.3);
             flex-shrink: 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
         }
 
         .copy-chip:hover {
@@ -1253,7 +1325,7 @@
         }
 
         body.light-mode .contact-form {
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.92);
         }
 
         .form-row-2 {
@@ -1293,7 +1365,12 @@
             color: #f8fafc;
         }
 
-        /* Footer */
+        .form-btn-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.85rem;
+        }
+
         footer {
             border-top: 1px solid var(--border-subtle);
             padding: 2.5rem 0;
@@ -1395,7 +1472,6 @@
             font-weight: 600;
         }
 
-        /* Responsive Media Queries */
         @media (max-width: 1024px) {
             .hero-grid {
                 grid-template-columns: 1fr;
@@ -1426,7 +1502,7 @@
             .mobile-toggle {
                 display: inline-flex;
             }
-            .services-grid, .projects-grid, .form-row-2 {
+            .services-grid, .projects-grid, .form-row-2, .form-btn-group {
                 grid-template-columns: 1fr;
             }
             .contact-box {
@@ -1456,7 +1532,6 @@
         <div class="orb orb-3"></div>
     </div>
 
-    <!-- Sticky Glassmorphic Navbar -->
     <header class="navbar-wrapper">
         <nav class="navbar glass-panel">
             <a href="#home" class="brand">
@@ -1467,31 +1542,31 @@
                 </div>
                 <div>
                     <span class="brand-text-title">Najif Bin Jaman</span>
-                    <span class="brand-text-sub">Digital Portfolio</span>
+                    <span class="brand-text-sub">Cyber Security Expert</span>
                 </div>
             </a>
 
             <div class="nav-links">
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="#about" class="nav-link">About</a>
-                <a href="#expertise" class="nav-link">Expertise</a>
-                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#expertise" class="nav-link">Services</a>
+                <a href="#projects" class="nav-link">Case Studies</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
 
             <div class="nav-actions">
                 <button type="button" onclick="openGuideModal()" class="btn-guide hide-mobile">
-                    <i class="fa-brands fa-github"></i>
-                    <span>GitHub Guide</span>
+                    <i class="fa-solid fa-camera"></i>
+                    <span>Photo &amp; Edit Guide</span>
                 </button>
 
                 <button type="button" id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
                     <i id="theme-icon" class="fa-solid fa-sun" style="color: #fbbf24;"></i>
                 </button>
 
-                <a href="#contact" class="btn-primary hide-mobile" style="padding: 0.55rem 1.1rem; font-size: 0.84rem;">
-                    <span>Let's Talk</span>
-                    <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i>
+                <a href="https://wa.me/8801738991884" target="_blank" rel="noopener noreferrer" class="btn-whatsapp hide-mobile" style="padding: 0.55rem 1.1rem; font-size: 0.84rem;">
+                    <i class="fa-brands fa-whatsapp" style="font-size: 1rem;"></i>
+                    <span>WhatsApp Now</span>
                 </a>
 
                 <button type="button" id="mobile-menu-btn" class="icon-btn mobile-toggle" aria-label="Open menu">
@@ -1504,12 +1579,12 @@
         <div id="mobile-menu" class="mobile-menu glass-panel">
             <a href="#home" class="mobile-nav-link">Home</a>
             <a href="#about" class="mobile-nav-link">About Me</a>
-            <a href="#expertise" class="mobile-nav-link">Expertise & Services</a>
-            <a href="#projects" class="mobile-nav-link">Featured Projects</a>
-            <a href="#contact" class="mobile-nav-link">Contact</a>
+            <a href="#expertise" class="mobile-nav-link">Cyber &amp; Social Services</a>
+            <a href="#projects" class="mobile-nav-link">Case Studies</a>
+            <a href="#contact" class="mobile-nav-link">Contact Me</a>
             <button type="button" onclick="openGuideModal()" class="btn-guide" style="justify-content: center; margin-top: 0.4rem; padding: 0.7rem;">
-                <i class="fa-brands fa-github"></i>
-                <span>গিটহাব আপডেট গাইড (GitHub Guide)</span>
+                <i class="fa-solid fa-camera"></i>
+                <span>ছবি ও কোড আপডেট গাইড (Guide)</span>
             </button>
         </div>
     </header>
@@ -1523,7 +1598,7 @@
                     <div>
                         <div class="status-pill glass-panel">
                             <span class="status-dot"></span>
-                            <span>Available for Freelance &amp; Collaborations</span>
+                            <span>24/7 Urgent Cyber Security &amp; Recovery Support</span>
                         </div>
 
                         <p class="hero-greeting">Assalamu Alaikum, I'm</p>
@@ -1533,52 +1608,95 @@
 
                         <div class="typewriter-row">
                             <span class="typewriter-prompt">&gt;</span>
-                            <span id="typewriter-text" class="gradient-text">Web Developer</span>
+                            <span id="typewriter-text" class="gradient-text">Cyber Security Specialist</span>
                             <span class="typewriter-caret"></span>
                         </div>
 
                         <p class="hero-bio">
-                            Building sleek, high-performance web experiences, scaling high-engagement social media communities, and managing rock-solid Cloud &amp; RDP server infrastructure for modern digital brands.
+                            Specialized in <strong>Facebook, Instagram &amp; YouTube</strong> security operations—from suspended/disabled ID &amp; page recovery, defamatory post removal, and fake profile/page takedowns to complete A-to-Z professional Page Management. Based in <strong>Rajshahi, Bangladesh</strong>.
                         </p>
 
                         <div class="hero-cta-group">
-                            <a href="#projects" class="btn-primary">
-                                <span>Explore My Work</span>
-                                <i class="fa-solid fa-arrow-right"></i>
+                            <a href="https://wa.me/8801738991884" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+                                <!-- Official WhatsApp SVG -->
+                                <svg class="app-logo-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" r="22" fill="#25D366"/>
+                                    <path d="M33.6 28.7c-.5-.3-3.1-1.5-3.6-1.7-.5-.2-.8-.3-1.2.3-.4.5-1.4 1.7-1.7 2-.3.3-.6.4-1.1.1-3-.1.5-5.3-2.6-7.4-6.1-.6-.9.6-.9 1.5-2.9.2-.4.1-.7 0-1-.1-.3-1.2-2.9-1.6-3.9-.4-1-.9-.9-1.2-.9h-1c-.4 0-1 .1-1.5.7-.5.5-2 1.9-2 4.7s2 5.5 2.3 5.9c.3.4 4 6.1 9.7 8.5 3.6 1.5 5 1.6 6.8 1.4 1.1-.2 3.1-1.3 3.5-2.5.4-1.2.4-2.2.3-2.5-.1-.2-.5-.4-1-.6z" fill="#fff"/>
+                                </svg>
+                                <span>WhatsApp: 01738991884</span>
                             </a>
-                            <a href="#contact" class="btn-secondary">
-                                <i class="fa-regular fa-paper-plane" style="color: var(--accent-cyan);"></i>
-                                <span>Get In Touch</span>
+                            <a href="#expertise" class="btn-primary">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span>Explore Services</span>
                             </a>
                         </div>
 
+                        <!-- Official App Logo Strip -->
                         <div class="social-strip">
-                            <span class="social-label">Connect:</span>
-                            <a href="https://github.com/Najifjb" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="GitHub">
-                                <i class="fa-brands fa-github"></i>
+                            <span class="social-label">Direct Apps:</span>
+
+                            <!-- Facebook Official Logo Link -->
+                            <a href="https://www.facebook.com/unknown.unkhown.69" target="_blank" rel="noopener noreferrer" class="app-logo-pill" title="Facebook Profile">
+                                <svg class="app-logo-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" r="22" fill="#1877F2"/>
+                                    <path d="M29.5 25.5l.8-5.3h-5.1v-3.5c0-1.5.7-2.9 3-2.9h2.3V9.3s-2.1-.4-4.1-.4c-4.2 0-7 2.5-7 7.2v4.1h-4.7v5.3h4.7v12.8c.9.1 1.9.2 2.9.2s2-.1 2.9-.2V25.5h4.3z" fill="#fff"/>
+                                </svg>
+                                <span>Facebook</span>
                             </a>
-                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="Facebook">
-                                <i class="fa-brands fa-facebook-f"></i>
+
+                            <!-- Instagram Official Logo Link -->
+                            <a href="https://www.instagram.com/najif.bj/" target="_blank" rel="noopener noreferrer" class="app-logo-pill" title="Instagram Profile">
+                                <svg class="app-logo-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <radialGradient id="igGradHero" cx="30%" cy="107%" r="150%">
+                                            <stop offset="0%" stop-color="#fdf497"/>
+                                            <stop offset="5%" stop-color="#fdf497"/>
+                                            <stop offset="45%" stop-color="#fd5949"/>
+                                            <stop offset="60%" stop-color="#d6249f"/>
+                                            <stop offset="90%" stop-color="#285AEB"/>
+                                        </radialGradient>
+                                    </defs>
+                                    <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#igGradHero)"/>
+                                    <rect x="10" y="10" width="28" height="28" rx="7" stroke="#fff" stroke-width="3"/>
+                                    <circle cx="24" cy="24" r="6.5" stroke="#fff" stroke-width="3"/>
+                                    <circle cx="32.2" cy="15.8" r="2" fill="#fff"/>
+                                </svg>
+                                <span>Instagram</span>
                             </a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="LinkedIn">
-                                <i class="fa-brands fa-linkedin-in"></i>
+
+                            <!-- WhatsApp Official Logo Link -->
+                            <a href="https://wa.me/8801738991884" target="_blank" rel="noopener noreferrer" class="app-logo-pill" title="WhatsApp Direct">
+                                <svg class="app-logo-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" r="22" fill="#25D366"/>
+                                    <path d="M33.6 28.7c-.5-.3-3.1-1.5-3.6-1.7-.5-.2-.8-.3-1.2.3-.4.5-1.4 1.7-1.7 2-.3.3-.6.4-1.1.1-3-.1.5-5.3-2.6-7.4-6.1-.6-.9.6-.9 1.5-2.9.2-.4.1-.7 0-1-.1-.3-1.2-2.9-1.6-3.9-.4-1-.9-.9-1.2-.9h-1c-.4 0-1 .1-1.5.7-.5.5-2 1.9-2 4.7s2 5.5 2.3 5.9c.3.4 4 6.1 9.7 8.5 3.6 1.5 5 1.6 6.8 1.4 1.1-.2 3.1-1.3 3.5-2.5.4-1.2.4-2.2.3-2.5-.1-.2-.5-.4-1-.6z" fill="#fff"/>
+                                </svg>
+                                <span>WhatsApp</span>
                             </a>
-                            <a href="#contact" class="icon-btn" aria-label="WhatsApp">
-                                <i class="fa-brands fa-whatsapp"></i>
+
+                            <!-- Gmail Official Logo Link -->
+                            <a href="mailto:najifbj69@gmail.com" class="app-logo-pill" title="Send Email">
+                                <svg class="app-logo-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="6" width="44" height="36" rx="8" fill="#ffffff"/>
+                                    <path d="M8 14v22h6V22l10 7.5L34 22v14h6V14l-6-4.5-10 7.5-10-7.5L8 14z" fill="#EA4335"/>
+                                    <path d="M8 14l6-4.5v12.5H8V14z" fill="#4285F4"/>
+                                    <path d="M40 14l-6-4.5v12.5h6V14z" fill="#FBBC05"/>
+                                    <path d="M8 36h6V22l-6-4.5V36z" fill="#34A853"/>
+                                </svg>
+                                <span>Gmail</span>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Right Column: Constrained 3D Glass Developer & Server Card -->
+                    <!-- Right Column: 3D Glass Cyber Security Profile Card -->
                     <div class="hero-visual-wrapper">
                         <div class="floating-chip glass-panel chip-top-left">
-                            <i class="fa-solid fa-code" style="color: var(--accent-indigo);"></i>
-                            <span>Modern Web Stack</span>
+                            <i class="fa-solid fa-user-shield" style="color: var(--accent-emerald);"></i>
+                            <span>ID &amp; Page Recovery</span>
                         </div>
 
                         <div class="floating-chip glass-panel chip-bottom-right">
-                            <i class="fa-solid fa-server" style="color: var(--accent-cyan);"></i>
-                            <span>99.9% RDP Uptime</span>
+                            <i class="fa-solid fa-ban" style="color: #f43f5e;"></i>
+                            <span>Instant Takedown</span>
                         </div>
 
                         <div class="profile-showcase-card">
@@ -1588,13 +1706,19 @@
                                     <span class="window-dot dot-amber"></span>
                                     <span class="window-dot dot-green"></span>
                                 </div>
-                                <span class="terminal-title">najif@cloud-node:~</span>
+                                <span class="terminal-title">najif@cyber-shield:~</span>
                             </div>
 
-                            <!-- Strictly Constrained Avatar Stage -->
-                            <div class="avatar-stage">
+                            <!-- Profile Picture Stage: Automatically loads profile.jpg if uploaded to GitHub, with SVG fallback -->
+                            <div class="avatar-stage" title="Upload profile.jpg to GitHub to show your photo here!">
                                 <div class="avatar-stage-inner">
-                                    <svg class="avatar-svg" width="175" height="175" viewBox="0 0 300 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <img
+                                        src="profile.jpg"
+                                        alt="Najif Bin Jaman"
+                                        class="profile-photo-img"
+                                        onerror="this.style.display='none'; document.getElementById('fallback-cyber-avatar').style.display='block';"
+                                    >
+                                    <svg id="fallback-cyber-avatar" style="display: none;" class="avatar-svg" width="180" height="180" viewBox="0 0 300 320" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <defs>
                                             <linearGradient id="suitGrad" x1="0" y1="0" x2="300" y2="320" gradientUnits="userSpaceOnUse">
                                                 <stop offset="0%" stop-color="#4f46e5"/>
@@ -1625,21 +1749,21 @@
                                     <span>Najif Bin Jaman</span>
                                     <i class="fa-solid fa-circle-check verified-icon"></i>
                                 </div>
-                                <p class="profile-handle">@Najifjb • Verified Digital Builder</p>
+                                <p class="profile-handle">Cyber Security Specialist • Rajshahi, BD</p>
                             </div>
 
                             <div class="terminal-metrics">
                                 <div class="metric-line">
-                                    <span class="metric-key">status.role</span>
-                                    <span class="metric-val">"Full-Stack &amp; Cloud"</span>
+                                    <span class="metric-key">specialty</span>
+                                    <span class="metric-val">"FB • IG • YouTube Security"</span>
                                 </div>
                                 <div class="metric-line">
-                                    <span class="metric-key">rdp.infrastructure</span>
-                                    <span class="metric-val">99.98% Online</span>
+                                    <span class="metric-key">operations</span>
+                                    <span class="metric-val">Recovery &amp; Takedown</span>
                                 </div>
                                 <div class="metric-line">
-                                    <span class="metric-key">social.reach</span>
-                                    <span class="metric-val">500K+ Active</span>
+                                    <span class="metric-key">location</span>
+                                    <span class="metric-val">Rajshahi, Bangladesh</span>
                                 </div>
                             </div>
                         </div>
@@ -1653,53 +1777,53 @@
             <div class="container">
                 <div class="section-header">
                     <div class="section-badge">
-                        <i class="fa-solid fa-user-astronaut"></i>
+                        <i class="fa-solid fa-shield-halved"></i>
                         <span>About Me</span>
                     </div>
                     <h2 class="section-title">
-                        Bridging <span class="gradient-text">Code, Cloud &amp; Communities</span>
+                        Protecting Your <span class="gradient-text">Digital Identity &amp; Pages</span>
                     </h2>
                     <p class="section-subtitle">
-                        A multidisciplinary digital builder focused on crafting modern web solutions, scaling social media ecosystems, and operating reliable server infrastructures.
+                        Dedicated Cyber Security Specialist helping individuals, creators, and businesses recover lost assets, eliminate cyber threats, and manage high-reach social media pages.
                     </p>
                 </div>
 
-                <!-- 4 Key Stats Grid -->
+                <!-- 4 Key Cyber Security Stats Grid -->
                 <div class="stats-grid">
                     <div class="glass-panel glass-panel-interactive stat-card">
                         <div class="stat-icon" style="background: rgba(99, 102, 241, 0.15); color: #818cf8;">
-                            <i class="fa-solid fa-laptop-code"></i>
+                            <i class="fa-solid fa-unlock-keyhole"></i>
                         </div>
-                        <div class="stat-number gradient-text">50+</div>
-                        <div class="stat-label">Projects &amp; Pages Scaled</div>
-                        <div class="stat-desc">Web apps, portfolios &amp; creator hubs</div>
+                        <div class="stat-number gradient-text">500+</div>
+                        <div class="stat-label">IDs &amp; Pages Recovered</div>
+                        <div class="stat-desc">Suspended, disabled &amp; hacked assets restored</div>
+                    </div>
+
+                    <div class="glass-panel glass-panel-interactive stat-card">
+                        <div class="stat-icon" style="background: rgba(244, 63, 94, 0.15); color: #fb7185;">
+                            <i class="fa-solid fa-ban"></i>
+                        </div>
+                        <div class="stat-number gradient-text">99.4%</div>
+                        <div class="stat-label">Takedown Success</div>
+                        <div class="stat-desc">Fake IDs, pages &amp; harmful posts removed</div>
                     </div>
 
                     <div class="glass-panel glass-panel-interactive stat-card">
                         <div class="stat-icon" style="background: rgba(6, 182, 212, 0.15); color: #22d3ee;">
-                            <i class="fa-solid fa-server"></i>
-                        </div>
-                        <div class="stat-number gradient-text">99.9%</div>
-                        <div class="stat-label">Server &amp; RDP Uptime</div>
-                        <div class="stat-desc">Low-latency Windows &amp; Linux VPS nodes</div>
-                    </div>
-
-                    <div class="glass-panel glass-panel-interactive stat-card">
-                        <div class="stat-icon" style="background: rgba(139, 92, 246, 0.15); color: #c084fc;">
-                            <i class="fa-solid fa-headset"></i>
+                            <i class="fa-solid fa-bolt"></i>
                         </div>
                         <div class="stat-number gradient-text">24/7</div>
-                        <div class="stat-label">Support &amp; Moderation</div>
-                        <div class="stat-desc">Active community management &amp; security</div>
+                        <div class="stat-label">Emergency Response</div>
+                        <div class="stat-desc">Fast action for hacked &amp; critical cases</div>
                     </div>
 
                     <div class="glass-panel glass-panel-interactive stat-card">
                         <div class="stat-icon" style="background: rgba(16, 185, 129, 0.15); color: #34d399;">
-                            <i class="fa-solid fa-shield-heart"></i>
+                            <i class="fa-solid fa-user-Secret"></i>
                         </div>
                         <div class="stat-number gradient-text">100%</div>
-                        <div class="stat-label">Client Satisfaction</div>
-                        <div class="stat-desc">Trusted deals &amp; long-term reliability</div>
+                        <div class="stat-label">Privacy &amp; Trust</div>
+                        <div class="stat-desc">Strict client confidentiality guaranteed</div>
                     </div>
                 </div>
 
@@ -1709,64 +1833,89 @@
                         <div>
                             <p class="bento-kicker">Who is Najif Bin Jaman?</p>
                             <h3 class="bento-heading">
-                                Turning creative ideas into fast, secure, and monetizable digital assets.
+                                Your trusted Cyber Security &amp; Social Media Problem Solver in Rajshahi, Bangladesh.
                             </h3>
                             <p class="bento-text">
-                                I am <strong>Najif Bin Jaman</strong>, a results-driven Web Developer, Social Media Strategist, and Cloud &amp; RDP Server Administrator based in Bangladesh. Whether it's building ultra-responsive web applications, moderating &amp; scaling high-reach Facebook communities, or provisioning high-speed Remote Desktop (RDP) environments, I focus on speed, security, and visual excellence.
+                                I am <strong>Najif Bin Jaman</strong>, a professional Cyber Security Specialist and Social Media Strategist based in <strong>Rajshahi, Bangladesh</strong>. I specialize in solving complex issues across <strong>Facebook, Instagram, and YouTube</strong>—ranging from recovering suspended or disabled accounts to permanently removing defamatory posts, fake profiles, and impersonating pages.
                             </p>
                             <p class="bento-text" style="margin-bottom: 0;">
-                                My workflow combines clean frontend engineering, AI-assisted web development, and hands-on digital marketplace experience to help brands and creators grow online.
+                                Beyond emergency recovery and takedowns, I provide complete <strong>A-to-Z Page Management</strong>, admin security hardening, policy violation fixes, and monetization protection so creators and brands can grow without fear of cyber attacks.
                             </p>
                         </div>
 
                         <div class="pill-group">
-                            <span class="skill-pill"><i class="fa-solid fa-check" style="color: var(--accent-emerald);"></i> Responsive Web Apps</span>
-                            <span class="skill-pill"><i class="fa-solid fa-check" style="color: var(--accent-emerald);"></i> Monetized Page Growth</span>
-                            <span class="skill-pill"><i class="fa-solid fa-check" style="color: var(--accent-emerald);"></i> High-Speed RDP &amp; VPS</span>
+                            <span class="skill-pill"><i class="fa-solid fa-check" style="color: var(--accent-emerald);"></i> Suspended ID Back</span>
+                            <span class="skill-pill"><i class="fa-solid fa-check" style="color: var(--accent-emerald);"></i> Post / ID / Page Remove</span>
+                            <span class="skill-pill"><i class="fa-solid fa-check" style="color: var(--accent-emerald);"></i> Full Page Management</span>
                         </div>
                     </div>
 
                     <div class="glass-panel glass-panel-interactive bento-card">
                         <div>
-                            <p class="bento-kicker">Tech &amp; Operations Arsenal</p>
+                            <p class="bento-kicker">Platforms &amp; Networks Covered</p>
                             <h3 class="bento-heading" style="font-size: 1.4rem;">
-                                Daily Tools &amp; Platforms
+                                Major Social Ecosystems
                             </h3>
                             <p class="bento-text" style="font-size: 0.88rem;">
-                                Modern web development technologies paired with cloud virtualization and social media management suites.
+                                Direct expertise in platform security policies, copyright frameworks, recovery channels, and page administration:
                             </p>
 
                             <div class="tech-stack-grid">
+                                <!-- Facebook -->
                                 <div class="tech-item">
-                                    <i class="fa-brands fa-html5" style="color: #f97316; font-size: 1.2rem;"></i>
-                                    <span>HTML5 &amp; CSS3</span>
+                                    <svg class="app-logo-svg" viewBox="0 0 48 48" fill="none">
+                                        <circle cx="24" cy="24" r="22" fill="#1877F2"/>
+                                        <path d="M29.5 25.5l.8-5.3h-5.1v-3.5c0-1.5.7-2.9 3-2.9h2.3V9.3s-2.1-.4-4.1-.4c-4.2 0-7 2.5-7 7.2v4.1h-4.7v5.3h4.7v12.8c.9.1 1.9.2 2.9.2s2-.1 2.9-.2V25.5h4.3z" fill="#fff"/>
+                                    </svg>
+                                    <span>Facebook Security</span>
                                 </div>
+
+                                <!-- Instagram -->
                                 <div class="tech-item">
-                                    <i class="fa-brands fa-js" style="color: #facc15; font-size: 1.2rem;"></i>
-                                    <span>JavaScript ES6+</span>
+                                    <svg class="app-logo-svg" viewBox="0 0 48 48" fill="none">
+                                        <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#igGradHero)"/>
+                                        <rect x="10" y="10" width="28" height="28" rx="7" stroke="#fff" stroke-width="3"/>
+                                        <circle cx="24" cy="24" r="6.5" stroke="#fff" stroke-width="3"/>
+                                        <circle cx="32.2" cy="15.8" r="2" fill="#fff"/>
+                                    </svg>
+                                    <span>Instagram Recovery</span>
                                 </div>
+
+                                <!-- YouTube -->
                                 <div class="tech-item">
-                                    <i class="fa-solid fa-wand-magic-sparkles" style="color: #38bdf8; font-size: 1.1rem;"></i>
-                                    <span>Modern UI / UX</span>
+                                    <svg class="app-logo-svg" viewBox="0 0 48 48" fill="none">
+                                        <rect x="2" y="8" width="44" height="32" rx="9" fill="#FF0000"/>
+                                        <path d="M31.5 24L19.5 31V17L31.5 24Z" fill="#FFFFFF"/>
+                                    </svg>
+                                    <span>YouTube Protection</span>
                                 </div>
+
+                                <!-- WhatsApp Support -->
                                 <div class="tech-item">
-                                    <i class="fa-brands fa-windows" style="color: #60a5fa; font-size: 1.2rem;"></i>
-                                    <span>Windows RDP</span>
+                                    <svg class="app-logo-svg" viewBox="0 0 48 48" fill="none">
+                                        <circle cx="24" cy="24" r="22" fill="#25D366"/>
+                                        <path d="M33.6 28.7c-.5-.3-3.1-1.5-3.6-1.7-.5-.2-.8-.3-1.2.3-.4.5-1.4 1.7-1.7 2-.3.3-.6.4-1.1.1-3-.1.5-5.3-2.6-7.4-6.1-.6-.9.6-.9 1.5-2.9.2-.4.1-.7 0-1-.1-.3-1.2-2.9-1.6-3.9-.4-1-.9-.9-1.2-.9h-1c-.4 0-1 .1-1.5.7-.5.5-2 1.9-2 4.7s2 5.5 2.3 5.9c.3.4 4 6.1 9.7 8.5 3.6 1.5 5 1.6 6.8 1.4 1.1-.2 3.1-1.3 3.5-2.5.4-1.2.4-2.2.3-2.5-.1-.2-.5-.4-1-.6z" fill="#fff"/>
+                                    </svg>
+                                    <span>WhatsApp Security</span>
                                 </div>
+
+                                <!-- Meta Business -->
                                 <div class="tech-item">
-                                    <i class="fa-brands fa-linux" style="color: #a78bfa; font-size: 1.2rem;"></i>
-                                    <span>Linux Cloud VPS</span>
+                                    <i class="fa-solid fa-users-gear" style="color: #38bdf8; font-size: 1.15rem;"></i>
+                                    <span>Page Management</span>
                                 </div>
+
+                                <!-- Cyber Takedown -->
                                 <div class="tech-item">
-                                    <i class="fa-brands fa-meta" style="color: #3b82f6; font-size: 1.2rem;"></i>
-                                    <span>Meta Business Suite</span>
+                                    <i class="fa-solid fa-gavel" style="color: #f43f5e; font-size: 1.15rem;"></i>
+                                    <span>Legal &amp; DMCA Takedown</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="pill-group" style="justify-content: space-between; font-size: 0.8rem; color: var(--text-secondary);">
-                            <span><i class="fa-solid fa-location-dot" style="color: var(--accent-cyan);"></i> Bangladesh 🇧🇩</span>
-                            <span style="color: var(--accent-emerald); font-weight: 700;"><i class="fa-solid fa-bolt"></i> Fast Delivery</span>
+                        <div class="pill-group" style="justify-content: space-between; font-size: 0.82rem; color: var(--text-secondary);">
+                            <span><i class="fa-solid fa-location-dot" style="color: var(--accent-cyan);"></i> Rajshahi, Bangladesh 🇧🇩</span>
+                            <span style="color: var(--accent-emerald); font-weight: 700;"><i class="fa-solid fa-shield-check"></i> Verified Specialist</span>
                         </div>
                     </div>
                 </div>
@@ -1777,121 +1926,229 @@
             <div class="container">
                 <div class="section-header">
                     <div class="section-badge">
-                        <i class="fa-solid fa-layer-group"></i>
-                        <span>Core Expertise</span>
+                        <i class="fa-solid fa-user-shield"></i>
+                        <span>Core Cyber Services</span>
                     </div>
                     <h2 class="section-title">
-                        Specialized <span class="gradient-text">Digital Services</span>
+                        Specialized <span class="gradient-text">Security &amp; Social Solutions</span>
                     </h2>
                     <p class="section-subtitle">
-                        Comprehensive solutions tailored for creators, businesses, and remote teams.
+                        From suspended account recovery and harmful content removal to complete Facebook, Instagram, and YouTube management.
                     </p>
                 </div>
 
                 <div class="services-grid">
-                    <!-- Service 1 -->
+                    <!-- Service 1: Suspended / Disabled ID & Page Recovery -->
                     <div class="glass-panel glass-panel-interactive service-card">
                         <div>
                             <div class="service-top">
                                 <div class="service-icon-box">
-                                    <i class="fa-solid fa-code"></i>
+                                    <i class="fa-solid fa-unlock-keyhole"></i>
                                 </div>
-                                <span class="service-index">01 / WEB DEV</span>
+                                <span class="service-index">01 / RECOVERY</span>
                             </div>
-                            <h3 class="service-title">Web Application Development</h3>
+                            <h3 class="service-title">Suspended &amp; Disabled ID / Page Back</h3>
                             <p class="service-desc">
-                                Custom-crafted personal portfolios, SaaS landing pages, and interactive web applications with responsive dark-glass aesthetics.
+                                Fast and reliable recovery of suspended, community-standard disabled, locked, or hacked Facebook &amp; Instagram accounts and pages.
                             </p>
                             <ul class="service-list">
-                                <li><i class="fa-solid fa-circle-check"></i><span>Glassmorphic &amp; Mobile-First UI Design</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i><span>AI-Assisted Full-Stack Web Apps</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i><span>Fast GitHub Pages &amp; Cloud Hosting</span></li>
+                                <li><i class="fa-solid fa-circle-check"></i><span>Suspended &amp; Disabled FB/IG ID Recovery</span></li>
+                                <li><i class="fa-solid fa-circle-check"></i><span>Hacked Account &amp; Two-Factor Bypass Fix</span></li>
+                                <li><i class="fa-solid fa-circle-check"></i><span>Unpublished or Restricted Page Restoration</span></li>
                             </ul>
                         </div>
                         <div>
                             <div class="progress-wrapper">
                                 <div class="progress-label">
-                                    <span>Frontend &amp; UI Architecture</span>
-                                    <span>96%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" style="width: 96%;"></div>
-                                </div>
-                            </div>
-                            <button type="button" onclick="selectService('Web Application Development')" class="service-action">
-                                <span>Start a Web Project</span>
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Service 2 -->
-                    <div class="glass-panel glass-panel-interactive service-card">
-                        <div>
-                            <div class="service-top">
-                                <div class="service-icon-box">
-                                    <i class="fa-solid fa-bullhorn"></i>
-                                </div>
-                                <span class="service-index">02 / SOCIAL GROWTH</span>
-                            </div>
-                            <h3 class="service-title">Social Media Strategy &amp; Moderation</h3>
-                            <p class="service-desc">
-                                Scaling Facebook pages and digital communities through active moderation, viral content scheduling, and monetization management.
-                            </p>
-                            <ul class="service-list">
-                                <li><i class="fa-solid fa-circle-check"></i><span>24/7 Page Moderation &amp; Admin Support</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i><span>Monetized Page Growth &amp; Policy Health</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i><span>Verified Digital Property Trading</span></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <div class="progress-wrapper">
-                                <div class="progress-label">
-                                    <span>Audience Growth &amp; Moderation</span>
+                                    <span>Recovery Success Rate</span>
                                     <span>98%</span>
                                 </div>
                                 <div class="progress-bar">
                                     <div class="progress-fill" style="width: 98%;"></div>
                                 </div>
                             </div>
-                            <button type="button" onclick="selectService('Social Media Management & Growth')" class="service-action">
-                                <span>Scale Your Community</span>
+                            <button type="button" onclick="selectService('Suspended / Disabled ID or Page Recovery')" class="service-action">
+                                <span>Recover Your ID / Page</span>
                                 <i class="fa-solid fa-arrow-right"></i>
                             </button>
                         </div>
                     </div>
 
-                    <!-- Service 3 -->
+                    <!-- Service 2: Post, Video & Content Removal -->
                     <div class="glass-panel glass-panel-interactive service-card">
                         <div>
                             <div class="service-top">
-                                <div class="service-icon-box">
-                                    <i class="fa-solid fa-server"></i>
+                                <div class="service-icon-box" style="background: linear-gradient(135deg, #e11d48 0%, #7c3aed 100%);">
+                                    <i class="fa-solid fa-trash-can-arrow-up"></i>
                                 </div>
-                                <span class="service-index">03 / CLOUD &amp; RDP</span>
+                                <span class="service-index">02 / POST REMOVE</span>
                             </div>
-                            <h3 class="service-title">Cloud &amp; RDP Server Administration</h3>
+                            <h3 class="service-title">Post, Photo &amp; Video Removal</h3>
                             <p class="service-desc">
-                                Provisioning and managing high-speed Windows RDP and Linux VPS environments optimized for remote work, streaming, and heavy tasks.
+                                Permanent removal of defamatory posts, private photos/videos, harassment reels, and unauthorized content across Facebook, Instagram &amp; YouTube.
                             </p>
                             <ul class="service-list">
-                                <li><i class="fa-solid fa-circle-check"></i><span>Dedicated NVMe Windows RDP &amp; VPS</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i><span>10Gbps Low-Latency Network Tuning</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i><span>Firewall Hardening &amp; Uptime Monitoring</span></li>
+                                <li><i class="fa-solid fa-circle-check"></i><span>Defamatory &amp; Harassment Post Takedown</span></li>
+                                <li><i class="fa-solid fa-circle-check"></i><span>Leaked Private Photo / Video Removal</span></li>
+                                <li><i class="fa-solid fa-circle-check"></i><span>YouTube Video &amp; Reel Copyright Removal</span></li>
                             </ul>
                         </div>
                         <div>
                             <div class="progress-wrapper">
                                 <div class="progress-label">
-                                    <span>Server Uptime &amp; Security</span>
-                                    <span>99.9%</span>
+                                    <span>Permanent Content Removal</span>
+                                    <span>99%</span>
                                 </div>
                                 <div class="progress-bar">
-                                    <div class="progress-fill" style="width: 99.9%;"></div>
+                                    <div class="progress-fill" style="width: 99%;"></div>
                                 </div>
                             </div>
-                            <button type="button" onclick="selectService('Cloud & RDP Server Infrastructure')" class="service-action">
-                                <span>Configure RDP / Server</span>
+                            <button type="button" onclick="selectService('Post, Photo or Video Removal')" class="service-action">
+                                <span>Request Post Removal</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Fake ID & Page Removal -->
+                    <div class="glass-panel glass-panel-interactive service-card">
+                        <div>
+                            <div class="service-top">
+                                <div class="service-icon-box" style="background: linear-gradient(135deg, #f97316 0%, #db2777 100%);">
+                                    <i class="fa-solid fa-user-slash"></i>
+                                </div>
+                                <span class="service-index">03 / ID &amp; PAGE REMOVE</span>
+                            </div>
+                            <h3 class="service-title">Fake ID &amp; Page Removal</h3>
+                            <p class="service-desc">
+                                Complete takedown of impersonating accounts, fake profiles, blackmail IDs, and unauthorized Facebook pages or Instagram handles.
+                            </p>
+                            <ul class="service-list">
+                                <li><i class="fa-solid fa-circle-check"></i><span>Impersonating &amp; Clone ID Permanent Ban</span></li>
+                                <li><i class="fa-solid fa-circle-check"></i><span>Fake Business Page &amp; Group Takedown</span></li>
+                                <li><i class="fa-solid fa-circle-check"></i><span>Blackmail &amp; Cyberbullying Account Removal</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="progress-wrapper">
+                                <div class="progress-label">
+                                    <span>Fake Asset Takedown Speed</span>
+                                    <span>99.5%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 99.5%;"></div>
+                                </div>
+                            </div>
+                            <button type="button" onclick="selectService('Fake ID or Page Removal')" class="service-action">
+                                <span>Remove Fake ID / Page</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Service 4: Complete Page Management -->
+                    <div class="glass-panel glass-panel-interactive service-card">
+                        <div>
+                            <div class="service-top">
+                                <div class="service-icon-box" style="background: linear-gradient(135deg, #1877F2 0%, #06b6d4 100%);">
+                                    <i class="fa-solid fa-sliders"></i>
+                                </div>
+                                <span class="service-index">04 / PAGE MANAGEMENT</span>
+                            </div>
+                            <h3 class="service-title">A-to-Z Page Management</h3>
+                            <p class="service-desc">
+                                Complete management for Facebook &amp; Instagram pages—including admin security, policy violation fixes, moderation, and growth strategy.
+                            </p>
+                            <ul class="service-list">
+                                <li><i class="fa-solid fa-circle-check"></i><span>24/7 Page Moderation &amp; Admin Protection</span></li>
+                                <li><i class="fa-solid fa-circle-check"></i><span>Policy Issue Fix &amp; Monetization Setup</span></li>
+                                <li><i class="fa-solid fa-circle-check"></i><span>Safe Ownership Transfer &amp; Page Setup</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="progress-wrapper">
+                                <div class="progress-label">
+                                    <span>Page Growth &amp; Safety</span>
+                                    <span>97%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 97%;"></div>
+                                </div>
+                            </div>
+                            <button type="button" onclick="selectService('Complete Facebook & Instagram Page Management')" class="service-action">
+                                <span>Hire for Page Management</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Service 5: YouTube Security & Copyright Solutions -->
+                    <div class="glass-panel glass-panel-interactive service-card">
+                        <div>
+                            <div class="service-top">
+                                <div class="service-icon-box" style="background: linear-gradient(135deg, #dc2626 0%, #f97316 100%);">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </div>
+                                <span class="service-index">05 / YOUTUBE SECURITY</span>
+                            </div>
+                            <h3 class="service-title">YouTube Takedown &amp; Channel Security</h3>
+                            <p class="service-desc">
+                                Protecting YouTube creators by removing stolen re-uploaded videos, resolving false copyright strikes, and recovering hijacked channels.
+                            </p>
+                            <ul class="service-list">
+                                <li><i class="fa-solid fa-circle-check"></i><span>Unauthorized YouTube Video Removal</span></li>
+                                <li><i class="fa-solid fa-circle-check"></i><span>Hacked / Suspended Channel Recovery</span></li>
+                                <li><i class="fa-solid fa-circle-check"></i><span>Fake Copyright Strike &amp; Claim Resolution</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="progress-wrapper">
+                                <div class="progress-label">
+                                    <span>YouTube Case Resolution</span>
+                                    <span>96%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 96%;"></div>
+                                </div>
+                            </div>
+                            <button type="button" onclick="selectService('YouTube Video Removal & Channel Security')" class="service-action">
+                                <span>Get YouTube Support</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Service 6: Cyber Security & Profile Hardening -->
+                    <div class="glass-panel glass-panel-interactive service-card">
+                        <div>
+                            <div class="service-top">
+                                <div class="service-icon-box" style="background: linear-gradient(135deg, #10b981 0%, #0284c7 100%);">
+                                    <i class="fa-solid fa-shield-virus"></i>
+                                </div>
+                                <span class="service-index">06 / CYBER SHIELD</span>
+                            </div>
+                            <h3 class="service-title">Anti-Hack &amp; Cyber Protection</h3>
+                            <p class="service-desc">
+                                Advanced security hardening for high-profile personal IDs, public figures, and business pages against hacking, phishing, and mass reporting.
+                            </p>
+                            <ul class="service-list">
+                                <li><i class="fa-solid fa-circle-check"></i><span>Anti-Hack &amp; Phishing Defense Setup</span></li>
+                                <li><i class="fa-solid fa-circle-check"></i><span>Mass Report &amp; Cloning Protection</span></li>
+                                <li><i class="fa-solid fa-circle-check"></i><span>Personal Cyber Privacy Consultation</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="progress-wrapper">
+                                <div class="progress-label">
+                                    <span>Account Security Hardening</span>
+                                    <span>100%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                            <button type="button" onclick="selectService('Cyber Security & Profile Protection')" class="service-action">
+                                <span>Secure Your Account</span>
                                 <i class="fa-solid fa-arrow-right"></i>
                             </button>
                         </div>
@@ -1905,19 +2162,19 @@
                 <div class="portfolio-Subheader">
                     <div>
                         <div class="section-badge">
-                            <i class="fa-solid fa-briefcase"></i>
-                            <span>Portfolio Showcase</span>
+                            <i class="fa-solid fa-award"></i>
+                            <span>Proven Track Record</span>
                         </div>
                         <h2 class="section-title" style="margin-bottom: 0;">
-                            Featured <span class="gradient-text">Work &amp; Ventures</span>
+                            Recent <span class="gradient-text">Operations &amp; Case Studies</span>
                         </h2>
                     </div>
 
                     <div class="filter-tabs" id="portfolio-filters">
-                        <button type="button" data-filter="all" class="filter-btn active">All</button>
-                        <button type="button" data-filter="web" class="filter-btn">Web Dev</button>
-                        <button type="button" data-filter="social" class="filter-btn">Social &amp; Growth</button>
-                        <button type="button" data-filter="cloud" class="filter-btn">Cloud &amp; RDP</button>
+                        <button type="button" data-filter="all" class="filter-btn active">All Cases</button>
+                        <button type="button" data-filter="recovery" class="filter-btn">ID &amp; Page Recovery</button>
+                        <button type="button" data-filter="takedown" class="filter-btn">Post &amp; ID Remove</button>
+                        <button type="button" data-filter="management" class="filter-btn">Page Management</button>
                     </div>
                 </div>
 
@@ -1932,100 +2189,169 @@
                 <div class="glass-panel contact-box">
                     <div class="contact-grid">
                         
-                        <!-- Left Column: Direct Contact Cards -->
+                        <!-- Left Column: Direct Contact Cards with Official App Logos -->
                         <div>
                             <div class="section-badge">
-                                <i class="fa-regular fa-comments"></i>
-                                <span>Get In Touch</span>
+                                <i class="fa-solid fa-headset"></i>
+                                <span>24/7 Direct Contact</span>
                             </div>
-                            <h2 class="section-title" style="font-size: clamp(1.85rem, 3.5vw, 2.6rem);">
-                                Let's Build Something <span class="gradient-text">Extraordinary</span>
+                            <h2 class="section-title" style="font-size: clamp(1.85rem, 3.5vw, 2.55rem);">
+                                Need Urgent <span class="gradient-text">Cyber Assistance?</span>
                             </h2>
                             <p class="section-subtitle">
-                                Need a custom website, a high-speed RDP server, or professional social media page management? Reach out directly or send a message using the form.
+                                Whether your ID/page is suspended, someone is harassing you with fake posts/accounts, or you need trusted page management—reach out directly below.
                             </p>
 
                             <div class="contact-cards-list">
+                                <!-- WhatsApp Card -->
                                 <div class="contact-info-card">
                                     <div class="contact-info-left">
                                         <div class="contact-info-icon">
-                                            <i class="fa-regular fa-envelope"></i>
+                                            <svg class="app-logo-svg" viewBox="0 0 48 48" fill="none">
+                                                <circle cx="24" cy="24" r="22" fill="#25D366"/>
+                                                <path d="M33.6 28.7c-.5-.3-3.1-1.5-3.6-1.7-.5-.2-.8-.3-1.2.3-.4.5-1.4 1.7-1.7 2-.3.3-.6.4-1.1.1-3-.1.5-5.3-2.6-7.4-6.1-.6-.9.6-.9 1.5-2.9.2-.4.1-.7 0-1-.1-.3-1.2-2.9-1.6-3.9-.4-1-.9-.9-1.2-.9h-1c-.4 0-1 .1-1.5.7-.5.5-2 1.9-2 4.7s2 5.5 2.3 5.9c.3.4 4 6.1 9.7 8.5 3.6 1.5 5 1.6 6.8 1.4 1.1-.2 3.1-1.3 3.5-2.5.4-1.2.4-2.2.3-2.5-.1-.2-.5-.4-1-.6z" fill="#fff"/>
+                                            </svg>
                                         </div>
                                         <div>
-                                            <div class="contact-info-label">Direct Email</div>
-                                            <div class="contact-info-value">contact@najifbinjaman.com</div>
+                                            <div class="contact-info-label">WhatsApp (24/7 Emergency)</div>
+                                            <div class="contact-info-value">01738991884</div>
                                         </div>
                                     </div>
-                                    <button type="button" onclick="copyText('contact@najifbinjaman.com', 'Email address copied!')" class="copy-chip">
+                                    <div style="display: flex; gap: 0.4rem;">
+                                        <button type="button" onclick="copyText('01738991884', 'WhatsApp number copied!')" class="copy-chip">
+                                            <i class="fa-regular fa-copy"></i>
+                                        </button>
+                                        <a href="https://wa.me/8801738991884" target="_blank" rel="noopener noreferrer" class="copy-chip" style="background: rgba(16, 185, 129, 0.18); color: #34d399; border-color: rgba(16, 185, 129, 0.35);">
+                                            Chat <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Facebook Card -->
+                                <div class="contact-info-card">
+                                    <div class="contact-info-left">
+                                        <div class="contact-info-icon">
+                                            <svg class="app-logo-svg" viewBox="0 0 48 48" fill="none">
+                                                <circle cx="24" cy="24" r="22" fill="#1877F2"/>
+                                                <path d="M29.5 25.5l.8-5.3h-5.1v-3.5c0-1.5.7-2.9 3-2.9h2.3V9.3s-2.1-.4-4.1-.4c-4.2 0-7 2.5-7 7.2v4.1h-4.7v5.3h4.7v12.8c.9.1 1.9.2 2.9.2s2-.1 2.9-.2V25.5h4.3z" fill="#fff"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="contact-info-label">Official Facebook</div>
+                                            <div class="contact-info-value">facebook.com/unknown.unkhown.69</div>
+                                        </div>
+                                    </div>
+                                    <a href="https://www.facebook.com/unknown.unkhown.69" target="_blank" rel="noopener noreferrer" class="copy-chip">
+                                        Profile <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+
+                                <!-- Instagram Card -->
+                                <div class="contact-info-card">
+                                    <div class="contact-info-left">
+                                        <div class="contact-info-icon">
+                                            <svg class="app-logo-svg" viewBox="0 0 48 48" fill="none">
+                                                <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#igGradHero)"/>
+                                                <rect x="10" y="10" width="28" height="28" rx="7" stroke="#fff" stroke-width="3"/>
+                                                <circle cx="24" cy="24" r="6.5" stroke="#fff" stroke-width="3"/>
+                                                <circle cx="32.2" cy="15.8" r="2" fill="#fff"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="contact-info-label">Official Instagram</div>
+                                            <div class="contact-info-value">@najif.bj</div>
+                                        </div>
+                                    </div>
+                                    <a href="https://www.instagram.com/najif.bj/" target="_blank" rel="noopener noreferrer" class="copy-chip">
+                                        Follow <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+
+                                <!-- Gmail Card -->
+                                <div class="contact-info-card">
+                                    <div class="contact-info-left">
+                                        <div class="contact-info-icon">
+                                            <svg class="app-logo-svg" viewBox="0 0 48 48" fill="none">
+                                                <rect x="2" y="6" width="44" height="36" rx="8" fill="#ffffff"/>
+                                                <path d="M8 14v22h6V22l10 7.5L34 22v14h6V14l-6-4.5-10 7.5-10-7.5L8 14z" fill="#EA4335"/>
+                                                <path d="M8 14l6-4.5v12.5H8V14z" fill="#4285F4"/>
+                                                <path d="M40 14l-6-4.5v12.5h6V14z" fill="#FBBC05"/>
+                                                <path d="M8 36h6V22l-6-4.5V36z" fill="#34A853"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="contact-info-label">Direct Gmail</div>
+                                            <div class="contact-info-value">najifbj69@gmail.com</div>
+                                        </div>
+                                    </div>
+                                    <button type="button" onclick="copyText('najifbj69@gmail.com', 'Gmail address copied!')" class="copy-chip">
                                         <i class="fa-regular fa-copy"></i> Copy
                                     </button>
                                 </div>
 
+                                <!-- Location Card -->
                                 <div class="contact-info-card">
                                     <div class="contact-info-left">
                                         <div class="contact-info-icon">
-                                            <i class="fa-brands fa-github"></i>
-                                        </div>
-                                        <div>
-                                            <div class="contact-info-label">GitHub Profile</div>
-                                            <div class="contact-info-value">github.com/Najifjb</div>
-                                        </div>
-                                    </div>
-                                    <a href="https://github.com/Najifjb" target="_blank" rel="noopener noreferrer" class="copy-chip">
-                                        Visit <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                    </a>
-                                </div>
-
-                                <div class="contact-info-card">
-                                    <div class="contact-info-left">
-                                        <div class="contact-info-icon">
-                                            <i class="fa-solid fa-location-dot"></i>
+                                            <i class="fa-solid fa-location-dot" style="color: var(--accent-cyan);"></i>
                                         </div>
                                         <div>
                                             <div class="contact-info-label">Location</div>
-                                            <div class="contact-info-value">Bangladesh (Remote Worldwide)</div>
+                                            <div class="contact-info-value">Rajshahi, Bangladesh</div>
                                         </div>
                                     </div>
                                     <span class="copy-chip" style="background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald); border-color: rgba(16, 185, 129, 0.3);">
-                                        Online
+                                        Active 24/7
                                     </span>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Right Column: Interactive Contact Form -->
+                        <!-- Right Column: Interactive Contact Form (Send via WhatsApp or Email) -->
                         <form id="contact-form" class="contact-form">
                             <div class="form-row-2">
                                 <div class="form-group">
                                     <label for="sender-name">Your Name *</label>
-                                    <input type="text" id="sender-name" class="form-control" required placeholder="e.g., Tanvir Ahmed">
+                                    <input type="text" id="sender-name" class="form-control" required placeholder="Enter your name">
                                 </div>
                                 <div class="form-group">
-                                    <label for="sender-email">Your Email *</label>
-                                    <input type="email" id="sender-email" class="form-control" required placeholder="you@example.com">
+                                    <label for="sender-contact">Phone / WhatsApp / Email *</label>
+                                    <input type="text" id="sender-contact" class="form-control" required placeholder="017XXXXXXXX or Email">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="service-topic">Service Needed</label>
+                                <label for="service-topic">Select Service Needed</label>
                                 <select id="service-topic" class="form-control">
-                                    <option value="Web Application Development">Web Application Development</option>
-                                    <option value="Social Media Management & Growth">Social Media Management &amp; Growth</option>
-                                    <option value="Cloud & RDP Server Infrastructure">Cloud &amp; RDP Server Infrastructure</option>
-                                    <option value="Digital Asset & Tech Commerce">Digital Asset &amp; Tech Commerce</option>
-                                    <option value="General Inquiry">General Collaboration / Inquiry</option>
+                                    <option value="Suspended / Disabled ID or Page Recovery">Suspended / Disabled ID or Page Recovery</option>
+                                    <option value="Post, Photo or Video Removal (FB / IG / YT)">Post, Photo or Video Removal (FB / IG / YT)</option>
+                                    <option value="Fake ID or Impersonating Page Removal">Fake ID or Impersonating Page Removal</option>
+                                    <option value="Complete Facebook & Instagram Page Management">Complete Facebook &amp; Instagram Page Management</option>
+                                    <option value="YouTube Video Removal & Channel Security">YouTube Video Removal &amp; Channel Security</option>
+                                    <option value="Cyber Security & Profile Protection">Cyber Security &amp; Profile Protection</option>
                                 </select>
                             </div>
 
                             <div class="form-group">
-                                <label for="sender-message">Project Details or Message *</label>
-                                <textarea id="sender-message" rows="4" class="form-control" required placeholder="Tell me about your project, requirements, or questions..."></textarea>
+                                <label for="target-link">Target Profile / Page / Post Link (Optional)</label>
+                                <input type="text" id="target-link" class="form-control" placeholder="https://facebook.com/... or instagram.com/...">
                             </div>
 
-                            <button type="submit" class="btn-primary" style="width: 100%; padding: 0.95rem;">
-                                <span>Send Message</span>
-                                <i class="fa-solid fa-paper-plane"></i>
-                            </button>
+                            <div class="form-group">
+                                <label for="sender-message">Describe Your Issue / Requirement *</label>
+                                <textarea id="sender-message" rows="4" class="form-control" required placeholder="Explain what happened to your ID/Page or what content you need removed..."></textarea>
+                            </div>
+
+                            <div class="form-btn-group">
+                                <button type="button" onclick="sendViaWhatsApp()" class="btn-whatsapp" style="width: 100%; padding: 0.9rem;">
+                                    <i class="fa-brands fa-whatsapp" style="font-size: 1.1rem;"></i>
+                                    <span>Send on WhatsApp</span>
+                                </button>
+                                <button type="submit" class="btn-primary" style="width: 100%; padding: 0.9rem;">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <span>Send via Gmail</span>
+                                </button>
+                            </div>
                         </form>
 
                     </div>
@@ -2043,15 +2369,23 @@
                     </div>
                 </div>
                 <p class="footer-copy">
-                    © <span id="year-span">2026</span> <strong>Najif Bin Jaman</strong>. All rights reserved.
+                    © <span id="year-span">2026</span> <strong>Najif Bin Jaman</strong> • Cyber Security Specialist (Rajshahi, Bangladesh).
                 </p>
             </div>
 
-            <div style="display: flex; align-items: center; gap: 0.75rem;">
-                <button type="button" onclick="openGuideModal()" class="btn-guide">
-                    <i class="fa-brands fa-github"></i>
-                    <span>How to Update on GitHub</span>
-                </button>
+            <div style="display: flex; align-items: center; gap: 0.65rem; flex-wrap: wrap;">
+                <a href="https://www.facebook.com/unknown.unkhown.69" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f" style="color: #1877F2;"></i>
+                </a>
+                <a href="https://www.instagram.com/najif.bj/" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram" style="color: #E1306C;"></i>
+                </a>
+                <a href="https://wa.me/8801738991884" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp" style="color: #25D366;"></i>
+                </a>
+                <a href="mailto:najifbj69@gmail.com" class="icon-btn" aria-label="Gmail">
+                    <i class="fa-regular fa-envelope" style="color: #EA4335;"></i>
+                </a>
                 <a href="#home" class="icon-btn" aria-label="Back to top">
                     <i class="fa-solid fa-arrow-up"></i>
                 </a>
@@ -2069,37 +2403,32 @@
         </div>
     </div>
 
-    <!-- GitHub Quick Update Guide Modal -->
+    <!-- Photo & GitHub Update Guide Modal -->
     <div id="guide-modal" class="modal-backdrop">
         <div class="modal-box">
             <button type="button" onclick="closeGuideModal()" class="modal-close" aria-label="Close guide">
                 <i class="fa-solid fa-xmark"></i>
             </button>
             <h3 class="font-display" style="font-size: 1.45rem; margin-bottom: 0.4rem;">
-                গিটহাবে নতুন কোডটি আপডেট করার নিয়ম
+                আপনার নিজের ছবি ও কোড আপডেট করার নিয়ম
             </h3>
             <p style="font-size: 0.85rem; color: var(--accent-cyan); margin-bottom: 1.25rem; font-weight: 600;">
-                মাত্র ৩০ সেকেন্ডে আপনার সাইটের কালার ও ডিজাইন ঠিক করে নিন:
+                আমি কোডের ভেতর আপনার ছবির অপশন অটোমেটিক করে দিয়েছি!
             </p>
 
             <div class="guide-step">
-                <strong>ধাপ ১: আপনার GitHub Repository-তে যান</strong>
-                গিটহাবে আপনার <code>najifbinjaman.github.io</code> রিপোজিটরির ভেতরে <code>&lt;&gt; Code</code> ট্যাবে গিয়ে <code>index.html</code> ফাইলটির ওপর ক্লিক করুন।
+                <strong>ধাপ ১: নতুন কোডটি `index.html`-এ বসান</strong>
+                গিটহাবে আপনার <code>index.html</code> ফাইলে গিয়ে পেন্সিল আইকনে (✏️ Edit) ক্লিক করুন। আগের সব কোড মুছে এই নতুন কোডটি Paste করে <strong>Commit changes</strong> করুন।
             </div>
 
             <div class="guide-step">
-                <strong>ধাপ ২: Edit বাটনে ক্লিক করুন</strong>
-                ডান পাশের উপরের কোণায় থাকা <strong>পেন্সিল আইকনে (✏️ Edit this file)</strong> ক্লিক করুন।
-            </div>
-
-            <div class="guide-step">
-                <strong>ধাপ ৩: আগের কোড মুছে নতুন কোড Paste করুন</strong>
-                বক্সের ভেতর থাকা আগের সব কোড সিলেক্ট করে (<code>Ctrl + A</code>) মুছে ফেলুন এবং আমার দেওয়া এই নতুন কোডটি <strong>Paste (<code>Ctrl + V</code>)</strong> করে উপরে ডান কোণায় <strong>Commit changes...</strong> বাটনে ক্লিক করুন।
+                <strong>ধাপ ২: আপনার নিজের ছবি (`profile.jpg`) যেভাবে বসাবেন</strong>
+                আপনার নিজের যে ছবিটি ওয়েবসাইটে দেখাতে চান, সেটির নাম বদলে (Rename করে) <code>profile.jpg</code> রাখুন। এরপর গিটহাবে <strong>Add file ➔ Upload files</strong>-এ গিয়ে ওই <code>profile.jpg</code> ছবিটি আপলোড করে <strong>Commit changes</strong> দিন—কোডে আর হাত দিতে হবে না, অটোমেটিক আপনার ছবি চলে আসবে!
             </div>
 
             <div class="guide-step" style="margin-bottom: 1.25rem;">
-                <strong>ধাপ ৪: ব্রাউজারে Hard Refresh দিন</strong>
-                ১ মিনিট অপেক্ষা করে আপনার ওয়েবসাইটের ট্যাবে গিয়ে কিবোর্ডে <code>Ctrl + Shift + R</code> (মোবাইলে পেজ রিলোড) চাপুন—সাথে সাথে পুরো প্রিমিয়াম কালার ও ডিজাইন চলে আসবে!
+                <strong>ধাপ ৩: ব্রাউজারে Hard Refresh দিন</strong>
+                ১ মিনিট অপেক্ষা করে আপনার ওয়েবসাইটে গিয়ে <code>Ctrl + Shift + R</code> চাপুন (মোবাইলে পেজ রিলোড দিন)।
             </div>
 
             <button type="button" onclick="closeGuideModal()" class="btn-primary" style="width: 100%;">
@@ -2115,98 +2444,98 @@
         const portfolioData = [
             {
                 id: 1,
-                title: "NexusRDP Cloud Control Panel",
-                category: "cloud",
-                categoryLabel: "Cloud & RDP",
+                title: "Suspended & Disabled Facebook ID Recovery",
+                category: "recovery",
+                categoryLabel: "ID & Page Recovery",
                 gradientClass: "banner-grad-1",
-                icon: "fa-server",
-                metrics: "99.98% Uptime • <15ms Ping",
-                summary: "High-speed Remote Desktop (RDP) & VPS management environment engineered for low-latency remote operations, bandwidth monitoring, and firewall security.",
-                tags: ["Windows RDP", "NVMe VPS", "10Gbps Port", "Security Hardening"],
+                icon: "fa-unlock-keyhole",
+                metrics: "24–48 Hours Turnaround • 98% Success",
+                summary: "Restoring personal profiles and creator accounts disabled due to community standard flags, two-factor authentication lockouts, or unauthorized hacking.",
+                tags: ["Facebook Security", "Suspended ID Back", "2FA Bypass", "Hacked Recovery"],
                 deliverables: [
-                    "Multi-region Windows Server & Linux VPS deployment",
-                    "Real-time CPU, RAM, and network latency optimization",
-                    "Encrypted remote access with 24/7 uptime monitoring"
+                    "Official appeal & identity verification submission",
+                    "Hacked login email/phone number reversal",
+                    "Complete account security hardening post-recovery"
                 ]
             },
             {
                 id: 2,
-                title: "NovaMart Digital Asset Storefront",
-                category: "web",
-                categoryLabel: "Web Dev",
+                title: "Defamatory Post & Private Video Takedown",
+                category: "takedown",
+                categoryLabel: "Post & Content Remove",
                 gradientClass: "banner-grad-2",
-                icon: "fa-bag-shopping",
-                metrics: "Sub-Second Load • Glass UI",
-                summary: "Sleek digital marketplace & tech storefront featuring instant category filtering, verified seller badges, and responsive glassmorphism.",
-                tags: ["HTML5", "Pure CSS3", "JavaScript ES6", "Responsive UI"],
+                icon: "fa-trash-can-arrow-up",
+                metrics: "Fast Removal • FB, IG & YouTube",
+                summary: "Permanent removal of harassing posts, non-consensual private photos/videos, and defamatory viral reels from Facebook, Instagram, and YouTube.",
+                tags: ["Post Remove", "Privacy Violation", "Harassment Takedown", "Video Remove"],
                 deliverables: [
-                    "Zero-dependency ultra-fast loading architecture",
-                    "Interactive product filtering and instant search",
-                    "Direct WhatsApp & escrow inquiry integration"
+                    "Rapid takedown of privacy-violating photos, reels & videos",
+                    "Removal of defamatory group posts and comments",
+                    "100% confidential handling for sensitive cases"
                 ]
             },
             {
                 id: 3,
-                title: "ViralPulse Page Growth & Moderation",
-                category: "social",
-                categoryLabel: "Social & Growth",
-                gradientClass: "banner-grad-3",
-                icon: "fa-chart-line",
-                metrics: "500K+ Monthly Reach • Monetized",
-                summary: "End-to-end content scheduling, active community moderation, and monetization compliance system for high-traffic Facebook pages.",
-                tags: ["Meta Suite", "Page Moderation", "Organic Growth", "Monetization"],
+                title: "Fake ID & Impersonating Page Removal",
+                category: "takedown",
+                categoryLabel: "ID & Page Remove",
+                gradientClass: "banner-grad-5",
+                icon: "fa-user-slash",
+                metrics: "Permanent Ban • Clone & Fake Profiles",
+                summary: "Eliminating fake Facebook/Instagram profiles, clone accounts, blackmail IDs, and unauthorized pages pretending to be you or your brand.",
+                tags: ["Fake ID Remove", "Page Remove", "Impersonation Ban", "Cyber Protection"],
                 deliverables: [
-                    "24/7 active comment moderation and spam protection",
-                    "High-retention reel & content publishing workflows",
-                    "Full policy compliance for monetized creator pages"
+                    "Permanent termination of fake & clone social profiles",
+                    "Takedown of scam or impersonating business pages",
+                    "Protection against repeat account cloning"
                 ]
             },
             {
                 id: 4,
-                title: "AI-Assisted Creator & SaaS Portfolio",
-                category: "web",
-                categoryLabel: "Web Dev",
+                title: "A-to-Z Facebook & Instagram Page Management",
+                category: "management",
+                categoryLabel: "Page Management",
                 gradientClass: "banner-grad-4",
-                icon: "fa-wand-magic-sparkles",
-                metrics: "100/100 Lighthouse Score",
-                summary: "Next-generation personal branding and SaaS landing page with animated aurora backdrops, dark/light mode, and interactive case studies.",
-                tags: ["Modern UI/UX", "Bento Grid", "Animations", "GitHub Pages"],
+                icon: "fa-sliders",
+                metrics: "Full Admin Security • Policy Fix",
+                summary: "End-to-end management for public figures, brands, and monetized pages—covering admin security, policy violation fixes, moderation, and reach growth.",
+                tags: ["Page Management", "Admin Security", "Policy Fix", "Monetization Care"],
                 deliverables: [
-                    "Custom pure CSS glassmorphic design system",
-                    "Interactive project modals and dynamic typewriter",
-                    "Lifetime free hosting setup on GitHub Pages"
+                    "24/7 page moderation, comment filtering & spam defense",
+                    "Unoriginal content & monetization policy issue resolution",
+                    "Multi-layer admin protection against page hijacking"
                 ]
             },
             {
                 id: 5,
-                title: "Creator & Streaming Dedicated RDP Nodes",
-                category: "cloud",
-                categoryLabel: "Cloud & RDP",
-                gradientClass: "banner-grad-5",
-                icon: "fa-gauge-high",
-                metrics: "Dedicated IP • High Bandwidth",
-                summary: "Custom-tuned Remote Desktop servers built specifically for social media managers, live streamers, and multi-session workflows.",
-                tags: ["Dedicated IP", "Remote Desktop", "Multi-Session", "Cloud Admin"],
+                title: "YouTube Video Removal & Strike Resolution",
+                category: "takedown",
+                categoryLabel: "YouTube Security",
+                gradientClass: "banner-grad-3",
+                icon: "fa-youtube",
+                metrics: "Copyright Takedown • Channel Recovery",
+                summary: "Removing stolen or defamatory videos from YouTube, resolving malicious copyright strikes, and recovering hijacked creator channels.",
+                tags: ["YouTube Takedown", "Copyright Strike", "Channel Recovery", "DMCA"],
                 deliverables: [
-                    "Pre-configured creator toolkits and isolated profiles",
-                    "Clean dedicated static IP for safe page management",
-                    "Automated snapshots and rapid technical support"
+                    "Permanent removal of unauthorized YouTube uploads",
+                    "Hijacked Google/YouTube Brand Account recovery",
+                    "Consultation on copyright strikes and channel safety"
                 ]
             },
             {
                 id: 6,
-                title: "Verified Social Property & Tech Hub",
-                category: "social",
-                categoryLabel: "Social & Growth",
+                title: "Unpublished Page & Business Manager Recovery",
+                category: "recovery",
+                categoryLabel: "ID & Page Recovery",
                 gradientClass: "banner-grad-6",
                 icon: "fa-shield-halved",
-                metrics: "100% Verified Transfers",
-                summary: "Trusted digital commerce operations for acquiring, valuing, and scaling established social media pages and curated tech devices.",
-                tags: ["Asset Valuation", "Safe Handover", "Page Audit", "Tech Commerce"],
+                metrics: "Verified Restoration • High-Reach Pages",
+                summary: "Recovering unpublished, restricted, or hacked Facebook Pages and Meta Business Manager assets for businesses and content creators.",
+                tags: ["Unpublished Page", "Hacked Page Back", "Meta Support", "Admin Restore"],
                 deliverables: [
-                    "Complete page quality and monetization health audit",
-                    "Secure admin ownership transfer and 2FA setup",
-                    "Post-transfer growth strategy for new page owners"
+                    "Restoration of unpublished or quality-flagged Facebook pages",
+                    "Recovery of pages stolen via phishing or rogue admins",
+                    "Complete Business Manager security lockdown"
                 ]
             }
         ];
@@ -2243,7 +2572,7 @@
                             ${project.tags.map(t => `<span class="project-tag">${t}</span>`).join('')}
                         </div>
                         <div class="project-footer">
-                            <span>View Case Study</span>
+                            <span>View Case Details</span>
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </div>
                     </div>
@@ -2271,7 +2600,7 @@
                     <i class="fa-solid ${project.icon}"></i>
                     <span>${project.categoryLabel}</span>
                 </div>
-                <h3 class="font-display" style="font-size: 1.65rem; font-weight: 700; margin-bottom: 0.4rem;">
+                <h3 class="font-display" style="font-size: 1.6rem; font-weight: 700; margin-bottom: 0.4rem;">
                     ${project.title}
                 </h3>
                 <p style="font-size: 0.85rem; color: var(--accent-cyan); font-weight: 700; margin-bottom: 1rem;">
@@ -2281,7 +2610,7 @@
                     ${project.summary}
                 </p>
                 <div class="guide-step" style="margin-bottom: 1.25rem;">
-                    <strong>Key Deliverables &amp; Highlights:</strong>
+                    <strong>How I Handle This Operation:</strong>
                     <ul class="service-list" style="margin-bottom: 0; margin-top: 0.5rem;">
                         ${project.deliverables.map(d => `<li><i class="fa-solid fa-circle-check"></i><span>${d}</span></li>`).join('')}
                     </ul>
@@ -2293,10 +2622,10 @@
                     <button type="button" onclick="closeProjectModal()" class="btn-secondary" style="padding: 0.65rem 1.2rem;">
                         Close
                     </button>
-                    <button type="button" onclick="closeProjectModal(); selectService('${project.categoryLabel}');" class="btn-primary" style="padding: 0.65rem 1.3rem;">
-                        <span>Request Similar Solution</span>
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
+                    <a href="https://wa.me/8801738991884?text=${encodeURIComponent('Assalamu Alaikum Najif Bhai, I need help with: ' + project.title)}" target="_blank" rel="noopener noreferrer" class="btn-whatsapp" style="padding: 0.65rem 1.3rem;">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Discuss on WhatsApp</span>
+                    </a>
                 </div>
             `;
             document.getElementById('project-modal').classList.add('open');
@@ -2325,15 +2654,15 @@
                 }
             }
             document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-            showToast(`Selected "${serviceName}" — fill out the form below!`);
+            showToast(`Selected "${serviceName}" — send your details below!`);
         }
 
-        // Dynamic Typewriter Effect
+        // Dynamic Typewriter Effect for Cyber Security Persona
         const roles = [
-            "Web Developer",
-            "Social Media Strategist",
-            "Cloud & RDP Server Admin",
-            "Digital Entrepreneur"
+            "Cyber Security Specialist",
+            "Social Media Recovery Expert",
+            "Post, ID & Page Takedown Pro",
+            "A-to-Z Page Manager"
         ];
         let roleIdx = 0;
         let charIdx = 0;
@@ -2345,7 +2674,7 @@
             charIdx = deleting ? charIdx - 1 : charIdx + 1;
             typeEl.textContent = current.substring(0, charIdx);
 
-            let delay = deleting ? 40 : 85;
+            let delay = deleting ? 40 : 80;
             if (!deleting && charIdx === current.length) {
                 delay = 2000;
                 deleting = true;
@@ -2366,7 +2695,7 @@
             const isLight = document.body.classList.contains('light-mode');
             themeIcon.className = isLight ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
             themeIcon.style.color = isLight ? '#4f46e5' : '#fbbf24';
-            showToast(isLight ? 'Switched to Light Mode ☀️' : 'Switched to Dark Glass Mode ✨');
+            showToast(isLight ? 'Switched to Light Mode ☀️' : 'Switched to Dark Cyber Mode 🛡️');
         });
 
         // Mobile Drawer Toggle
@@ -2414,23 +2743,41 @@
             document.body.removeChild(temp);
         }
 
-        // Contact Form Submit Handler
+        // Direct WhatsApp Form Sender
+        function sendViaWhatsApp() {
+            const name = document.getElementById('sender-name').value.trim();
+            const contact = document.getElementById('sender-contact').value.trim();
+            const topic = document.getElementById('service-topic').value;
+            const link = document.getElementById('target-link').value.trim();
+            const message = document.getElementById('sender-message').value.trim();
+
+            if (!name || !message) {
+                showToast('Please enter your name and describe your issue first.');
+                return;
+            }
+
+            const text = `Assalamu Alaikum Najif Bhai,\n\n*Name:* ${name}\n*Contact:* ${contact || 'N/A'}\n*Service:* ${topic}\n*Target Link:* ${link || 'N/A'}\n\n*Issue Details:*\n${message}`;
+            window.open(`https://wa.me/8801738991884?text=${encodeURIComponent(text)}`, '_blank');
+        }
+
+        // Gmail Submit Handler
         document.getElementById('contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
             const name = document.getElementById('sender-name').value.trim();
-            const email = document.getElementById('sender-email').value.trim();
+            const contact = document.getElementById('sender-contact').value.trim();
             const topic = document.getElementById('service-topic').value;
+            const link = document.getElementById('target-link').value.trim();
             const message = document.getElementById('sender-message').value.trim();
 
-            if (!name || !email || !message) {
+            if (!name || !contact || !message) {
                 showToast('Please fill in all required fields.');
                 return;
             }
 
-            showToast(`Thanks ${name}! Opening your email client...`);
-            const subject = encodeURIComponent(`[Portfolio Inquiry] ${topic} — from ${name}`);
-            const body = encodeURIComponent(`Hello Najif Bin Jaman,\n\nName: ${name}\nEmail: ${email}\nService: ${topic}\n\nMessage:\n${message}`);
-            window.location.href = `mailto:contact@najifbinjaman.com?subject=${subject}&body=${body}`;
+            showToast(`Thanks ${name}! Opening Gmail...`);
+            const subject = encodeURIComponent(`[Cyber Support Request] ${topic} — from ${name}`);
+            const body = encodeURIComponent(`Assalamu Alaikum Najif Bin Jaman,\n\nName: ${name}\nContact: ${contact}\nService Needed: ${topic}\nTarget Link: ${link || 'Not provided'}\n\nDetails:\n${message}`);
+            window.location.href = `mailto:najifbj69@gmail.com?subject=${subject}&body=${body}`;
             this.reset();
         });
 
@@ -2440,7 +2787,6 @@
             document.documentElement.style.setProperty('--cursor-y', `${e.clientY}px`);
         });
 
-        // Close Modals on Escape or Backdrop Click
         window.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
                 closeProjectModal();
